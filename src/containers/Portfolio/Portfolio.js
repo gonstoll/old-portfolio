@@ -39,9 +39,9 @@ const Portfolio = () => {
         `;
 
         if (matchMedia && matchMedia('(prefers-color-scheme: dark)').matches) {
-            styles += 'color: #fff;';
+            styles += 'color: #fdfdfd;';
         } else {
-            styles += 'color: #000;';
+            styles += 'color: #1f1f1f;';
         }
 
         console.log(`%c${message}`, styles);

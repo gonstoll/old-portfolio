@@ -2,34 +2,34 @@
 
 @media (prefers-color-scheme: dark) {
     .Portfolio {
-        background-color: #1f1f1f;
-        color: #fdfdfd;
+        background-color: var(--dark-color);
+        color: var(--light-color);
     }
 }
 
 @media (prefers-color-scheme: light) {
     .Portfolio {
-        background-color: #fdfdfd;
-        color: #1f1f1f;
+        background-color: var(--light-color);
+        color: var(--dark-color);
     }
 }
 
 .Light {
-    background-color: #fdfdfd;
-    color: #1f1f1f;
+    background-color: var(--light-color);
+    color: var(--dark-color);
 }
 
 .Light ::selection {
-    background-color: #1f1f1f;
-    color: #fdfdfd;
+    background-color: var(--dark-color);
+    color: var(--light-color);
 }
 
 .Dark {
-    background-color: #1f1f1f;
-    color: #fdfdfd;
+    background-color: var(--dark-color);
+    color: var(--light-color);
 }
 
 .Dark ::selection {
-    background-color: #fdfdfd;
-    color: #1f1f1f;
+    background-color: var(--light-color);
+    color: var(--dark-color);
 }

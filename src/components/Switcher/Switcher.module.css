@@ -2,7 +2,7 @@
     position: relative;
     width: 36px;
     height: 18px;
-    border: 1px solid #000;
+    border: 1px solid var(--dark-color);
     border-radius: 10px;
     cursor: pointer;
 }
@@ -15,7 +15,7 @@
     left: 2px;
     top: 50%;
     transform: translateY(-50%);
-    background-color: #000;
+    background-color: var(--dark-color);
     border-radius: 50%;
     transition: .4s;
 }
@@ -28,10 +28,10 @@
     transform: translateY(-50%);
 }
 
-.DarkSwitch { border: 1px solid #fff; }
+.DarkSwitch { border: 1px solid var(--light-color); }
 
 .DarkSwitch:before {
-    background-color: #fff;
+    background-color: var(--dark-color);
     transform: translate(17px, -50%);
 }
 

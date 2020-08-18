@@ -5,16 +5,16 @@ body {
     font-size: 15px;
     margin: 0;
     height: 100vh;
-    background-color: #fff;
+    background-color: var(--light-color);
     color: #000;
 }
 
 @media (prefers-color-scheme: dark) {
-    body { background-color: #000; }
+    body { background-color: var(--dark-color); }
 }
 
 @media (prefers-color-scheme: light) {
-    body { background-color: #fff; }
+    body { background-color: var(--light-color); }
 }
 
 body p { margin: 0; }
@@ -25,4 +25,9 @@ body p { margin: 0; }
 
 @media (max-width: 991px) {
     .text-right { text-align: left; }
+}
+
+:root {
+    --light-color: #fdfdfd;
+    --dark-color: #1f1f1f;
 }
