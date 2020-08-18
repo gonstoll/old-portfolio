@@ -3,33 +3,33 @@
 @media (prefers-color-scheme: dark) {
     .Portfolio {
         background-color: #1f1f1f;
-        color: #fff;
+        color: #fdfdfd;
     }
 }
 
 @media (prefers-color-scheme: light) {
     .Portfolio {
-        background-color: #fff;
+        background-color: #fdfdfd;
         color: #1f1f1f;
     }
 }
 
 .Light {
-    background-color: #fff;
+    background-color: #fdfdfd;
     color: #1f1f1f;
 }
 
 .Light ::selection {
     background-color: #1f1f1f;
-    color: #fff;
+    color: #fdfdfd;
 }
 
 .Dark {
     background-color: #1f1f1f;
-    color: #fff;
+    color: #fdfdfd;
 }
 
 .Dark ::selection {
-    background-color: rgba(255, 255, 255, 0.996);
+    background-color: #fdfdfd;
     color: #1f1f1f;
 }
