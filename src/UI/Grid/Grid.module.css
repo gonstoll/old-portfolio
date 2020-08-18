@@ -1,0 +1,15 @@
+.Grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+}
+
+.MarginBottom { margin-bottom: 70px; }
+
+@media (min-width: 576px) {
+    .SubGrid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 992px) {
+    .Grid { grid-template-columns: repeat(2, 1fr); }
+}

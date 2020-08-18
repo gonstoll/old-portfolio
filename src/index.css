@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    margin: 0;
+    height: 100vh;
+    background-color: #fff;
+    color: #000;
+}
+
+@media (prefers-color-scheme: dark) {
+    body { background-color: #000; }
+}
+
+@media (prefers-color-scheme: light) {
+    body { background-color: #fff; }
+}
+
+body p { margin: 0; }
+
+.italic { font-style: italic; }
+
+.text-right { text-align: right; }
+
+@media (max-width: 991px) {
+    .text-right { text-align: left; }
+}

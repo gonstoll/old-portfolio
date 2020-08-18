@@ -1,0 +1,35 @@
+.Portfolio { transition: all .3s linear; }
+
+@media (prefers-color-scheme: dark) {
+    .Portfolio {
+        background-color: #1f1f1f;
+        color: #fff;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .Portfolio {
+        background-color: #fff;
+        color: #1f1f1f;
+    }
+}
+
+.Light {
+    background-color: #fff;
+    color: #1f1f1f;
+}
+
+.Light ::selection {
+    background-color: #1f1f1f;
+    color: #fff;
+}
+
+.Dark {
+    background-color: #1f1f1f;
+    color: #fff;
+}
+
+.Dark ::selection {
+    background-color: rgba(255, 255, 255, 0.996);
+    color: #1f1f1f;
+}
