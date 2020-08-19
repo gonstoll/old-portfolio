@@ -31,7 +31,7 @@
 .DarkSwitch { border: 1px solid var(--light-color); }
 
 .DarkSwitch:before {
-    background-color: var(--dark-color);
+    background-color: var(--light-color);
     transform: translate(17px, -50%);
 }
 
