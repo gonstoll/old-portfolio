@@ -1,6 +1,6 @@
 const selectedProjects = [
 	{ title: 'Tørst', link: 'http://torst.patagonus.com/' },
-	{ title: 'Nico Papa Foto', link: 'http://nicopapafoto.com/' },
+	{ title: 'SquareZero Comics', link: 'http://squarezerocmx.com/' },
 	{ title: 'Anita Laudado', link: 'http://anitalaudado.com/' },
 	{ title: 'Owntech', link: 'http://own-tech.com/' },
 	{ title: 'Que Tal', link: 'http://quetal.com.ar/' },
