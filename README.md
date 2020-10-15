@@ -1,6 +1,6 @@
 # Portfolio, by Gonzalo Stoll
 
-This website is my own personal portfolio, done with ReactJS.
+This website is my own personal [portfolio](http://gonzalostoll.com/), done with ReactJS.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
