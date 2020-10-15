@@ -16,7 +16,7 @@ const Portfolio = () => {
     const [ modeState, setModeState ] = useState({ lightMode: true });
 
     const switchModesHandler = () => {
-		setModeState({ lightMode: !modeState.lightMode });
+		setModeState(prevState => ({ lightMode: !prevState.lightMode }));
     };
 
     const watchModeChange = () => {
