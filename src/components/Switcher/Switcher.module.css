@@ -1,42 +1,44 @@
 .Switcher {
-    position: relative;
-    width: 36px;
-    height: 18px;
-    border: 1px solid var(--dark-color);
-    border-radius: 10px;
-    cursor: pointer;
+	position: relative;
+	width: 36px;
+	height: 18px;
+	border: 1px solid var(--dark-color);
+	border-radius: 10px;
+	cursor: pointer;
 }
 
 .Switcher:before {
-    position: absolute;
-    content: '';
-    height: 15px;
-    width: 15px;
-    left: 2px;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: var(--dark-color);
-    border-radius: 50%;
-    transition: .4s;
+	position: absolute;
+	content: '';
+	height: 15px;
+	width: 15px;
+	left: 2px;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: var(--dark-color);
+	border-radius: 50%;
+	transition: 0.4s;
 }
 
 .Switcher:after {
-    content: '☾';
-    position: absolute;
-    right: 4px;
-    top: 50%;
-    transform: translateY(-50%);
+	content: '☾';
+	position: absolute;
+	right: 4px;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
-.DarkSwitch { border: 1px solid var(--light-color); }
+.DarkSwitch {
+	border: 1px solid var(--light-color);
+}
 
 .DarkSwitch:before {
-    background-color: var(--light-color);
-    transform: translate(17px, -50%);
+	background-color: var(--light-color);
+	transform: translate(17px, -50%);
 }
 
 .DarkSwitch:after {
-    right: unset;
-    left: 4px;
-    content: '☼';
+	right: unset;
+	left: 4px;
+	content: '☼';
 }

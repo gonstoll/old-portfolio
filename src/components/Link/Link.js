@@ -1,20 +1,27 @@
 import React from 'react';
-
-import classes from './Link.module.css';
 import PropTypes from 'prop-types';
 
-const link = props => {
-    return (
-		<a className={classes.Link} href={props.link} target={props.target} download={props.download}>
-			{props.children}
-		</a>
-	);
-}
+// Styles
+import classes from './Link.module.css';
+
+const link = ({ link, target, download, children }) => (
+  <a className={classes.Link} href={link} target={target} download={download}>
+    {children}
+  </a>
+);
 
 link.propTypes = {
 	link: PropTypes.string,
 	target: PropTypes.string,
-	download: PropTypes.bool
+	download: PropTypes.bool,
+	children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]),
+};
+
+link.defaultProps = {
+	link: '',
+	target: '',
+	download: false,
+	children: [],
 };
 
 export default link;
