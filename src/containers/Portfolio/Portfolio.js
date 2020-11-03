@@ -7,7 +7,7 @@ import Body from '../../components/Body/Body';
 import Footer from '../../components/Footer/Footer';
 
 // UI
-import Layout from '../../UI/Layout/Layout';
+import Layout from '../../components/UI/Layout/Layout';
 
 // Styles
 import classes from './Portfolio.module.css';
