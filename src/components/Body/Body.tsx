@@ -1,5 +1,3 @@
-import React from 'react';
-
 // Shared
 import projects from '../../shared/projects/projects';
 import skills from '../../shared/skills/skills';

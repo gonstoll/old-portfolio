@@ -1,5 +1,4 @@
-import React from 'react';
-
+// Styles
 import classes from './Hero.module.css';
 
 const hero = () => (
