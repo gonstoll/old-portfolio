@@ -1,5 +1,6 @@
 import Text from '@southstudio/south/content/Text';
 import GridCell from '@southstudio/south/layout/GridCell';
+import List from '../List';
 import Link from '../UI/Link';
 import {socialLinks} from './definitions';
 import {StyledGrid, StyledGridCell} from './styled';
@@ -16,11 +17,7 @@ export default function Footer() {
         </Text>
       </GridCell>
       <StyledGridCell xs={12} md={6}>
-        {socialLinks.map(s => (
-          <Link key={s.media} href={s.link} download={s.download}>
-            {s.media}
-          </Link>
-        ))}
+        <List items={socialLinks} inline />
       </StyledGridCell>
     </StyledGrid>
   );

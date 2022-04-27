@@ -1,5 +1,5 @@
 import {useLayoutEffect} from 'react';
-import Container from "@southstudio/south/layout/Container";
+import Container from '@southstudio/south/layout/Container';
 import {useThemeContext} from './context';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -36,7 +36,14 @@ export default function Portfolio() {
       <Hero />
       <List
         title="Skills"
-        items={['React', 'TypeScript', 'React Query', 'Jest', 'HTML', 'CSS']}
+        items={[
+          {type: 'text', label: 'React'},
+          {type: 'text', label: 'TypeScript'},
+          {type: 'text', label: 'React Query'},
+          {type: 'text', label: 'Jest'},
+          {type: 'text', label: 'HTML'},
+          {type: 'text', label: 'CSS'},
+        ]}
       />
       <Footer />
     </Container>
