@@ -17,8 +17,8 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     padding: 1rem;
-    background-color: ${props => props.theme.backgroundColor};
     color: ${props => props.theme.color};
+    background-color: ${props => props.theme.backgroundColor};
     transition: background-color 0.3s linear;
   }
 
