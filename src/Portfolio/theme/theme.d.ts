@@ -1,4 +1,4 @@
-import {DefaultTheme as SouthTheme} from '@southstudio/south/theme';
+import {SouthTheme} from '@southstudio/south/theme';
 import 'styled-components';
 
 declare module 'styled-components' {
