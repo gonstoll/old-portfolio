@@ -43,6 +43,7 @@ export default function Portfolio() {
           {type: 'text', label: 'Jest'},
           {type: 'text', label: 'HTML'},
           {type: 'text', label: 'CSS'},
+          {type: 'text', label: 'Accessibility'},
         ]}
       />
       <Footer />
