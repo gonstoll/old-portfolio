@@ -9,11 +9,11 @@ export default function Footer() {
   return (
     <StyledGrid>
       <GridCell xs={12} md={6}>
-        <Text element="h2" size="title3" noMargin>
+        <Text element="h3" size="title3" noMargin bold>
           Interested in working together?
         </Text>
-        <Text element="h2" size="title3" noMargin>
-          ↳ Contact me <Link href="mailto:stollgonzalo@gmail.com">here</Link>
+        <Text element="h3" size="title3" noMargin bold>
+          ↳ Contact me <Link href="mailto:stollgonzalo@gmail.com" aria-label="Contact me here">here</Link>
         </Text>
       </GridCell>
       <StyledGridCell xs={12} md={6}>

@@ -5,10 +5,6 @@ export const StyledLink = styled.a`
   color: inherit;
   width: fit-content;
 
-  & + & {
-    margin-left: 1rem;
-  }
-
   &:hover {
     text-decoration: underline;
   }

@@ -7,10 +7,12 @@ export default function Header() {
   return (
     <Grid>
       <GridCell>
-        <Text noMargin>Gonzalo Stoll</Text>
+        <Text noMargin element="h1">
+          Gonzalo Stoll
+        </Text>
       </GridCell>
       <GridCell>
-        <Toggle />
+        <Toggle align="right" />
       </GridCell>
     </Grid>
   );

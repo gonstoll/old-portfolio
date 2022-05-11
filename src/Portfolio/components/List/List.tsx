@@ -1,15 +1,15 @@
 import Text from '@southstudio/south/content/Text';
+import {AnchorHTMLAttributes} from 'react';
 import Link from '../UI/Link';
 import {StyledList} from './styled';
 
-type Item =
-  | {label: string; type: 'text'}
-  | {
-      label: string;
-      type: 'link';
-      link: string;
-      download: boolean | undefined;
-    };
+export type ItemText = {label: string; type: 'text'};
+export type ItemLink = {
+  label: string;
+  type: 'link';
+} & AnchorHTMLAttributes<HTMLAnchorElement>;
+
+type Item = ItemText | ItemLink;
 
 interface Props {
   inline?: boolean;
@@ -19,27 +19,38 @@ interface Props {
 
 export default function List({title, items, inline}: Props) {
   return (
-    <StyledList inline={inline}>
+    <>
       {title && (
-        <Text bold noMargin>
+        <Text id={title} bold={true} noMargin element="h3">
           {title}
         </Text>
       )}
-      {items.map((item, i) => {
-        if (item.type === 'link') {
-          return (
-            <Link href={item.link} download={item.download}>
-              {item.label}
-            </Link>
-          );
-        } else {
-          return (
-            <Text key={`${title} - ${i}`} noMargin>
-              {item.label}
-            </Text>
-          );
-        }
-      })}
-    </StyledList>
+
+      <StyledList inline={inline} aria-labelledby={title}>
+        {items.map((item, i) => {
+          if (item.type === 'link') {
+            const {label, type, ...linkProps} = item;
+            return (
+              <li>
+                <Link
+                  key={`${linkProps.href} - ${i} - ${label}`}
+                  {...linkProps}
+                >
+                  {label}
+                </Link>
+              </li>
+            );
+          } else {
+            return (
+              <li>
+                <Text key={`${title} - ${i} - ${item.label}`} noMargin>
+                  {item.label}
+                </Text>
+              </li>
+            );
+          }
+        })}
+      </StyledList>
+    </>
   );
 }

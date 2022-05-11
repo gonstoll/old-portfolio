@@ -1,15 +1,20 @@
-import {mediaQuery} from '@southstudio/south/styles/mediaQueries';
 import styled from 'styled-components';
 
 interface ListProps {
   inline?: boolean;
 }
 
-export const StyledList = styled.div<ListProps>`
-  ${props =>
-    props.inline &&
-    `
-      display: flex;
-      ${mediaQuery('md', 'align-items: center;')}
-    `}
+export const StyledList = styled.ul<ListProps>`
+  margin: 0;
+  padding: 0;
+  display: ${props => props.inline ? 'flex' : null};
+  align-items: center;
+  flex-wrap: wrap;
+
+  li {
+    list-style-type: none;
+    & + li {
+      margin-left: ${props => (props.inline ? '1rem' : null)};
+    }
+  }
 `;

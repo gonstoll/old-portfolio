@@ -1,13 +1,24 @@
 import {useThemeContext} from '../../context';
 import {StyledToggle} from './styled';
 
-export default function Toggle() {
+interface Props {
+  align?: 'left' | 'right' | 'center';
+}
+
+export default function Toggle({align = 'left'}: Props) {
   const {theme, updateTheme} = useThemeContext();
+
+  const themeOpposite = theme === 'light' ? 'dark' : 'light';
 
   return (
     <StyledToggle
       themeColor={theme}
-      onClick={() => updateTheme(theme === 'light' ? 'dark' : 'light')}
+      align={align}
+      onClick={() => updateTheme(themeOpposite)}
+      type="button"
+      role="switch"
+      aria-label="Light theme"
+      aria-checked={theme === 'light'}
     />
   );
 }

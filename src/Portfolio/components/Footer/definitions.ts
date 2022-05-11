@@ -1,28 +1,30 @@
 import resume from '../../../assets/Gonzalo_Stoll_2022.pdf';
+import {ItemLink} from '../List/List';
 
-export const socialLinks = [
+export const socialLinks: ItemLink[] = [
   {
-    type: 'link',
+    type: 'link' as const,
     label: '↳ Resume',
-    link: resume,
+    href: resume,
     download: true,
-  } as const,
+    'aria-label': 'Download my resume',
+  },
   {
-    type: 'link',
+    type: 'link' as const,
     label: 'Linkedin',
-    link: 'https://www.linkedin.com/in/gonzalostoll/',
+    href: 'https://www.linkedin.com/in/gonzalostoll/',
     download: false,
-  } as const,
+  },
   {
-    type: 'link',
+    type: 'link' as const,
     label: 'Github',
-    link: 'https://github.com/gonstoll/',
+    href: 'https://github.com/gonstoll/',
     download: false,
-  } as const,
+  },
   {
-    type: 'link',
+    type: 'link' as const,
     label: 'Medium',
-    link: 'https://medium.com/@gonstoll',
+    href: 'https://medium.com/@gonstoll',
     download: false,
-  } as const,
+  },
 ];
