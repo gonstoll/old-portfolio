@@ -1,6 +1,6 @@
 # Gonzalo Stoll portfolio
 
-This website is my old personal [portfolio](https://personal-portfolio-ashen.vercel.app), done with React, TypeScript, Tailwind and vitejs.
+This website is my old personal [portfolio](https://gonstoll-old-portfolio.vercel.app), done with React, TypeScript, Tailwind and vitejs.
 
 ## Development
 
