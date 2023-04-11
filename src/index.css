@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Scto';
+  src:  local('Scto Grotesk A'),
+        url('/fonts/scto/regular.woff2') format('woff2'),
+        url('/fonts/scto/regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+000-5FF;
+}
+
+@font-face {
+  font-family: 'Scto';
+  src:  local('Scto Grotesk A'),
+        url('/fonts/scto/bold.woff2') format('woff2'),
+        url('/fonts/scto/bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+000-5FF;
+}
+
+@layer base {
+  :root {
+    --font-sans: 'Scto', sans-serif;
+    --color-white: #fdfdfd;
+    --color-black: #1f1f1f;
+  }
+}
+
+html.light {
+  --text-color: var(--color-black);
+  --bg-color: var(--color-white);
+}
+
+html.dark {
+  --text-color: var(--color-white);
+  --bg-color: var(--color-black);
+}
+
+html {
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}

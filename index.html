@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" class="m-0 h-screen">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Gonzalo Stoll portfolio" />
+    <link rel="apple-touch-icon" href="/logo192.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <title>Gonzalo Stoll</title>
+    <script>
+      if (
+        localStorage.theme === 'dark' ||
+        (!localStorage.getItem('theme') &&
+          window.matchMedia('(prefers-color-scheme: dark)').matches)
+      ) {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+    </script>
+  </head>
+  <body
+    class="m-0 h-screen bg-white p-4 font-sans text-black transition-colors duration-500 dark:bg-black dark:text-white"
+  >
+    <div id="root" class="h-full"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
